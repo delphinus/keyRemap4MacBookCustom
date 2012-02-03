@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<root>
+	<item>
+		<name>Custome Keymaps</name>
+		<list>
+			<item>
+				<name>ctrl+tab to ctl+z, tab (change window)</name>
+				<identifier>remap.app_term_screen_tab</identifier>
+				<only>TERMINAL</only>
+				<autogen>--KeyToKey-- KeyCode::TAB, ModifierFlag::CONTROL_L, KeyCode::Z, ModifierFlag::CONTROL_L, KeyCode::TAB</autogen>
+				<autogen>--KeyToKey-- KeyCode::TAB, ModifierFlag::CONTROL_R, KeyCode::Z, ModifierFlag::CONTROL_L, KeyCode::TAB</autogen>
+			</item>
+			<item>
+				<name>cmd+123... to ctl+z, 123... (switch window)</name>
+				<identifier>remap.app_term_screen_num</identifier>
+				<only>TERMINAL</only>
+				<autogen>--KeyToKey-- KeyCode::KEY_0, ModifierFlag::COMMAND_L, KeyCode::Z, ModifierFlag::CONTROL_L, KeyCode::KEY_0</autogen>
+				<autogen>--KeyToKey-- KeyCode::KEY_1, ModifierFlag::COMMAND_L, KeyCode::Z, ModifierFlag::CONTROL_L, KeyCode::KEY_1</autogen>
+				<autogen>--KeyToKey-- KeyCode::KEY_2, ModifierFlag::COMMAND_L, KeyCode::Z, ModifierFlag::CONTROL_L, KeyCode::KEY_2</autogen>
+				<autogen>--KeyToKey-- KeyCode::KEY_3, ModifierFlag::COMMAND_L, KeyCode::Z, ModifierFlag::CONTROL_L, KeyCode::KEY_3</autogen>
+				<autogen>--KeyToKey-- KeyCode::KEY_4, ModifierFlag::COMMAND_L, KeyCode::Z, ModifierFlag::CONTROL_L, KeyCode::KEY_4</autogen>
+				<autogen>--KeyToKey-- KeyCode::KEY_5, ModifierFlag::COMMAND_L, KeyCode::Z, ModifierFlag::CONTROL_L, KeyCode::KEY_5</autogen>
+				<autogen>--KeyToKey-- KeyCode::KEY_6, ModifierFlag::COMMAND_L, KeyCode::Z, ModifierFlag::CONTROL_L, KeyCode::KEY_6</autogen>
+				<autogen>--KeyToKey-- KeyCode::KEY_7, ModifierFlag::COMMAND_L, KeyCode::Z, ModifierFlag::CONTROL_L, KeyCode::KEY_7</autogen>
+				<autogen>--KeyToKey-- KeyCode::KEY_8, ModifierFlag::COMMAND_L, KeyCode::Z, ModifierFlag::CONTROL_L, KeyCode::KEY_8</autogen>
+				<autogen>--KeyToKey-- KeyCode::KEY_9, ModifierFlag::COMMAND_L, KeyCode::Z, ModifierFlag::CONTROL_L, KeyCode::KEY_9</autogen>
+			</item>
+			<item>
+				<name>ESC to ESC + Left Command (for terminal)</name>
+				<identifier>remap.app_term_ime_off_esc</identifier>
+				<only>TERMINAL</only>
+				<autogen>--KeyToKey-- KeyCode::BRACKET_LEFT, ModifierFlag::CONTROL_L, KeyCode::JIS_EISUU, KeyCode::BRACKET_LEFT, ModifierFlag::CONTROL_L</autogen>
+			</item>
+		</list>
+	</item>
+</root>
