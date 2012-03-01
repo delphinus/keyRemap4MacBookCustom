@@ -1,17 +1,17 @@
 <?xml version="1.0"?>
 <root>
 	<item>
-		<name>Custome Keymaps</name>
+		<name>Custom Keymaps</name>
 		<list>
 			<item>
-				<name>ctrl+tab to ctl+z, tab (change window)</name>
+				<name>C-TAB to C-Z, TAB (change window)</name>
 				<identifier>remap.app_term_screen_tab</identifier>
 				<only>TERMINAL</only>
 				<autogen>--KeyToKey-- KeyCode::TAB, ModifierFlag::CONTROL_L, KeyCode::Z, ModifierFlag::CONTROL_L, KeyCode::TAB</autogen>
 				<autogen>--KeyToKey-- KeyCode::TAB, ModifierFlag::CONTROL_R, KeyCode::Z, ModifierFlag::CONTROL_L, KeyCode::TAB</autogen>
 			</item>
 			<item>
-				<name>cmd+123... to ctl+z, 123... (switch window)</name>
+				<name>D-123... to C-Z, 123... (switch window)</name>
 				<identifier>remap.app_term_screen_num</identifier>
 				<only>TERMINAL</only>
 				<autogen>--KeyToKey-- KeyCode::KEY_0, ModifierFlag::COMMAND_L, KeyCode::Z, ModifierFlag::CONTROL_L, KeyCode::KEY_0</autogen>
@@ -26,10 +26,12 @@
 				<autogen>--KeyToKey-- KeyCode::KEY_9, ModifierFlag::COMMAND_L, KeyCode::Z, ModifierFlag::CONTROL_L, KeyCode::KEY_9</autogen>
 			</item>
 			<item>
-				<name>ESC to ESC + Left Command (for terminal)</name>
+				<name>ESC, C-[, ` to ESC + IME off (for terminal)</name>
 				<identifier>remap.app_term_ime_off_esc</identifier>
 				<only>TERMINAL</only>
-				<autogen>--KeyToKey-- KeyCode::BRACKET_LEFT, ModifierFlag::CONTROL_L, KeyCode::JIS_EISUU, KeyCode::BRACKET_LEFT, ModifierFlag::CONTROL_L</autogen>
+				<autogen>--KeyToKey-- KeyCode::ESCAPE, KeyCode::JIS_EISUU, KeyCode::ESCAPE</autogen>
+				<autogen>--KeyToKey-- KeyCode::BRACKET_LEFT, ModifierFlag::CONTROL_L, KeyCode::JIS_EISUU, KeyCode::ESCAPE</autogen>
+                <autogen>--KeyToKey-- KeyCode::BACKQUOTE, KeyCode::JIS_EISUU, KeyCode::ESCAPE</autogen>
 			</item>
 		</list>
 	</item>
